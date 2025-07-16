@@ -1,4 +1,8 @@
-简易钱包仪表盘，包含以下功能：
+简易钱包仪表盘。
+
+![](wallet.png)
+
+包含以下功能：
   - ✅ 读取三个JSON文件（currencies.json, live-rates.json, wallet-balance.json）
   - ✅ 根据钱包余额查找支持的币种
   - ✅ 根据汇率数据计算USD价值
@@ -10,6 +14,7 @@
   - Kotlin + Flow
   - MVVM 的架构模式
 
+```
 项目结构图：
 ├── AppHelper.kt
 ├── data
@@ -34,6 +39,7 @@
 │    └── WalletAdapter.kt   RecyclerView适配器
 │        ├── item_wallet.xml: 钱包项目布局
 └── WalletApp.kt
+```
 
 数据处理逻辑：
   - 从assets读取JSON数据
