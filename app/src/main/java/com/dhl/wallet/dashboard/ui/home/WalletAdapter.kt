@@ -25,13 +25,11 @@ class WalletAdapter : ListAdapter<WalletItem, WalletAdapter.WalletViewHolder>(Wa
 
     class WalletViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val tvCurrencyName: TextView = itemView.findViewById(R.id.tvCurrencyName)
-        private val tvCurrencySymbol: TextView = itemView.findViewById(R.id.tvCurrencySymbol)
         private val tvBalance: TextView = itemView.findViewById(R.id.tvBalance)
         private val tvUsdValue: TextView = itemView.findViewById(R.id.tvUsdValue)
 
         fun bind(item: WalletItem) {
             tvCurrencyName.text = item.currency.name
-            tvCurrencySymbol.text = item.currency.symbol
             
             val balanceFormat = NumberFormat.getNumberInstance(Locale.US).apply {
                 maximumFractionDigits = 8
