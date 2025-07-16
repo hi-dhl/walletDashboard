@@ -1,4 +1,4 @@
-package com.dhl.wallet.dashboard.ui
+package com.dhl.wallet.dashboard.ui.home
 
 import android.view.LayoutInflater
 import android.view.View
